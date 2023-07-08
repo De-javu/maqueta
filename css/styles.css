@@ -1,0 +1,426 @@
+/*FUENTES*/
+@font-face {    /* se encarga de definir la funcion del estilo de letras que se aplicaran*/
+    font-family: "navis"; /* Se encarga de indicar el nombre de la funte aplicar*/
+    src: url("fonts/nevis.eot"); /* url de la fuente */
+    src: url("fonts/nevis.eot?#iefix") format("embedded-opentype"), /* url de la fuente */
+         url("fonts/nevis.woff") format("woff"), /* url de la fuente */
+         url("fonts/nevis.ttf") format("truetype"),  /* url de la fuente */
+         url("fonts/nevis.svg") format("svg"); /* url de la fuente */
+    font-weight: normal; /* Se encarga de espesificar peso y ancho y grosor de la fuente */
+    font-style: normal; /* Se encarga de espesificar la fuente del estilo de letra */
+}
+
+@font-face {    /* se encarga de definir la funcion del estilo de letras que se aplicaran*/
+    font-family: "fajala"; /* Se encarga de indicar el nombre de la funte aplicar*/
+    src: url("fonts/FjallaOne-Regular.ttf") format('truetype'); /* url de la fuente */
+
+        
+    font-weight: normal; /* Se encarga de espesificar peso y ancho y grosor de la fuente */
+    font-style: normal; /* Se encarga de espesificar la fuente del estilo de letra */
+}
+
+@font-face {    /* se encarga de definir la funcion del estilo de letras que se aplicaran*/
+    font-family: "icons"; /* Se encarga de indicar el nombre de la funte aplicar*/
+    src: url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg"), /* url de la fuente */
+         url("fonts/websymbols-regular-webfont.eot"), /* url de la fuente */
+         url("fonts/websymbols-regular-webfont.eot?#iefix"),
+         url("fonts/websymbols-regular-webfont.woff") format("woff"), /* url de la fuente */
+         url("fonts/websymbols-regular-webfont.ttf") format("truetype");  /* url de la fuente */
+         
+    font-weight: normal; /* Se encarga de espesificar peso y ancho y grosor de la fuente */
+    font-style: normal; /* Se encarga de espesificar la fuente del estilo de letra */
+}
+
+/*ESTILO GENERAL */
+
+*{ /*Se utilizza para indicar valore universales, se aplicaran a toda la web*/
+    padding: 0PX; /*Se encarga de definir un espcion en elos cautro bordes del elemento */
+    margin: 0PX; /* Se encarga de poner la margen en los 4 lados del elemento */
+}
+body{ /* Se encarga de apliacr a toda la pagina el stilo colo o findo que se aplique */
+    background-image: url("../img/paven.png"); /*Se utiliza para poner el findo al elemento*/
+}
+
+a{ /*Se utiiza para indicar que se aplicara estilos a los elemntos de enlace a*/
+    color: #529125; /*Se utiliza para indicar el color del elemento*/
+    text-decoration: none; /*Se utiliza para indicar que el texto no llevara ningun decoracion*/
+}
+
+a:visited{/*Se utiliza para crear un efecto indicando que cambio el linka al picar el link*/
+    color: #529125; /*Este es el color que tomara al consultar el link*/
+    
+}
+
+a:hover{ /*Se utiliza para indicar que tomara un efecto al pasar el cursor por encima */
+    color: #285616; /*Este es el color que se presenta al ponewr el cursor*/
+    
+}
+
+.red {
+    color: #9b2422 !important;
+}
+
+.blue{
+    color: #0c73f2 !important;
+}
+
+.orange{
+    color: #d69d2a !important;
+}
+
+.icon{
+    font-family:"icons";
+    float: left;
+    margin-right: 5px;
+    margin-top: -2px;
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+ 
+/*FORMULARIOS*/
+
+input[type="text"], /*Se encarga de fijar los estilos que se aplicaran al text*/ 
+input[type="email"], /*Se encarga de fijar los estilos que se aplicaran al email*/
+input[type="password"], /*Se encarga de fijar los estilos que se aplicaran al password*/
+select{ /*Es un selectro de atributos css, lo que se ponga el os corchtes se aplicara*/
+    border: 1px solid #C9C9C9; /*S utiliza para indicar que se aolicara un borde con ese color*/
+    box-shadow: 0px 0px 2px #CCC inset;/*Se utiliza para poner efecto de sombreado*/
+    background: white;/*Se utuliza para indicar el color que se aplicara al fondo del elemento*/
+    padding: 1px;/*Se utiliza para poner espacion en el terior de los 4 lados  del elemento*/
+    padding-top: 2px; /*Se utiliza para poner espacion en la parte surperior del elemento*/
+    padding-bottom: 2px;/* Se utiliza para poner espacio parte inferior del elemento */
+    color: gray; /*Se utiliza para indicar el clor que to,ara el texto*/
+    transition: all 300ms;/*Se utiliza para indicar el tiempo que tomara el cambio creando un efecto  */
+}
+input[type="text"]:focus,/*Se utiliza para indicar que se realiazra focus en el text*/
+input[type="email"]:focus,/*Se utiliza para indicar que se realiazra focus en el email*/
+input[type="password"]:focus,/*Se utiliza para indicar que se realiazra focus en el password*/
+select:focus{ /*Se utiliza para indicar que al momento de selecionar alguna de las casillas el esfecto focus cambiara segun lo que se configure en los corchetes*/
+        border-color:  1px solid #70b231; /* Se utiliza para indicar que el borede cambaira a ese color y tendra un grodsor de 1px*/ 
+        color: black; /*Se utiliza para indicar que encuanto escribamos el color de la letra sera negro*/   
+}
+
+input[type="button"],/*Se utiliza para indicar que se aplicaran estilos a input button*/
+input[type="submit"],/*Se utiliza para indicar que se aplicaran estilos a input submit*/
+input[type="reset"],/*Se utiliza para indicar que se aplicaran estilos a input reset*/
+button{
+    display: block;/*Se utiliza para el que el elemento se comporte como un bloque y ocupara todo el ancho y alto disponible*/
+    border-radius: 2px; /*Se utiliza para poner as esquias redondas*/
+    border: 1px solid green;/*Se utiliza para indicar que tendra un border 1px color green*/
+    width: 60px;/*Se utiliza para idicar el ancho del elemento*/
+    padding: 3px; /*Se utiliza para indicar que el borde interiir sera de de ese ancho en sus 4 lados */
+    background-color: #70b231;/*Se utiliza para indicar el color del fondo del elemento*/
+    cursor: pointer; /*Se utiliza para que el pintero cuando se pare sobre el elemnto tome la forma de una mano */
+    color: white;/*Se utiliza para indicar el color de la letra del elemento*/
+}
+
+input[type="button"]:hover,/*Se utiliza como selector de atributos para estos input*/
+input[type="submit"]:hover,/*Se utiliza como selector de atributos para estos input*/
+input[type="reset"]:hover,/*Se utiliza como selector de atributos para estos input*/
+button:hover{/*El efecto hover, se aplica cuando se pasa el cursor sobre el elemento sin hacer clic*/
+    box-shadow: 0px 0px 2px gray; /*Se utiliza para indicar qie tendra un efecto de sombreado al pasar el cursor sobre el elemento*/
+      
+}
+
+input[type="button"]:active,/*Se utiliza como selector de atributos para estos input*/
+input[type="submit"]:active,/*Se utiliza como selector de atributos para estos input*/
+input[type="reset"]:active,/*Se utiliza como selector de atributos para estos input*/
+button:active{/*Se aplica el estado active el cual se aplicara haciendo click sobre el elemento*/
+    box-shadow: 0px 0px 2px gray inset; /*Se aplicara ele fecto de sombreado al hacer clic*/
+    text-shadow: 0px 0px 1px #ccc;  /*Se aplicara ele fecto de sombreado al hacer clic*/
+    
+    
+}
+
+
+/*CABECERA*/
+#header{ /*Se utiliza para poner estilo al header con en indicador id*/
+    min-width: 1024px; /* Utilizamos para indicar el minio del ancho que se desea en el elemnto*/
+    width: 100%; /* Se utiliza para indicar que se utilizara el 100del ancho%*/
+    height: 250px; /* Se utiliza para indicar ques se desea un tamañp de 250px*/ 
+    margin: 0px auto; /*Se  utiliza para poner margen en los 4 lados */
+}
+
+#header a{ /*Se utiliza para indicar que se pondrea estilo al id de header a */
+    text-decoration: none; /*Se utiliza para indicar que se quitar la decoracion en el link*/
+
+}
+
+#header #logotipo{ /*Se utiliza para indicar que se aplicara estilos al id seleccionados*/
+    width:770px; /*ancho de 770px*/
+    margin: 0px auto; /*margen 0 arriba, abajo y las delos lados automaticas*/
+    padding-top: 20px; /* Se utiliza para poner borde al interior del elemento en este caso borde superior 20px*/
+
+}
+
+#header #logotipo img{/*Se utiliza para indicar id que se les aplicara estilos en este bloque*/
+    display: block; /*Se utiliza para el que elemento se comporte como un bloque y ocupara todo el ancho y alto disponible*/
+    text-align: center; /*Se utiliza para indicar que se centrara la texto dentro del elemento*/
+    margin: 0px auto;/* Se utiliza para poner margen arriba y abajo sera de cero y los ladoa automaticos*/
+    width: 140px;/* El ancho del elemento sera de 140px*/
+}
+
+#header h1{ /*Se utiliza para indicar id al cual se le aplicarn estilos*/
+    text-align: center; /*Se utiliza para indicar que el texto sera centrado en el elmento*/
+    font-size: 40px; /* Se utiliza para indicar el tamaño de la letra dentro del elemento*/
+    font-family:"nevis"; /*Se utiliza para indicar el estilo de letra quese desea aplicar*/
+    letter-spacing: 4px;/*Se utiliza para indicar el espacio entre los caracteres*/
+    margin-top: 10px; /*Se utiliza para  indicar el margen superior*/
+    text-shadow: 0px 2px 1px #333333; /*Se utiliza pára crea el efecto de sombra*/
+    transition: all 300ms; /*Se utiliza para indicar los efectos que se desean en la transicion en el tiempo  */
+
+}
+
+#header h1:hover{ /*Se utiliza para aplicar el efecto cuando el cursosr pase sobre el elemento*/
+    text-shadow: 0px 2px 1px #333333, 0px 0px 4px #70b231 ; /*Se utiliza para indicar el efecto de sombra*/
+}
+
+#header h1 a{ /*Se utiliza para indicar que se aplicara al id de este elemento*/
+    color: #70b231; /*Se utiliza para indicar elcolor que se desea */
+}
+
+/*BARRA DE NAVEGACION*/
+#nav{  /* Se utiliza como el id para poner estilos en la barra de navegacion*/
+    width: 100%; /* Se utiliza para indicar el ancho del elemento*/
+    height: 40px; /* Se uriliza para indicar el alto del elemnto */
+    background-color: #333333; /* Se utiliza para indicar color del fondo del elemento*/
+    color: white; /* Se utiliza para indicar el color de la letra del elemnto*/
+    font-family: sans-serif, Arial, Helvetica, Arial; /* Se utiliza para llamara erl stilo de letra que se desea trabajar*/
+    font-size: 14px; /* Se utiliza para indicar el tamaño de letra qie se desea*/
+    box-shadow: 0px 0px 2px gray;/* Se utiliza para poner el efecto de sombreado*/
+
+}
+#nav ul { /*vamos a plicar estilos al id del nav para la lista */
+    list-style: none; /*Se utiliza para crear la visulizacion en forma lista */
+
+    margin: 0px auto; /*Se utiliza para poner la margen en los 4 lados */
+    width: 1090px;/*Se utiliza para indicar el ancho del elemento*/
+
+}
+#nav > ul > li { /*se itiliza para definir los estilos que se aplicaran al nav , ul ,li */
+    line-height: 40px; /* Se itiliza para definir el ancho del elemento */
+    float: left; /*Se utiliza para poner un elemnto del lado delcontenedor seleccionado*/
+    border-right: 1px solid gray; /*Se utiliza para poner borde sobre el lado derecho*/
+}
+
+#nav > ul > li a{ /*Se utiliza para realizar los stilos dentro de  a de las lista*/
+    display: block; /*Se utiliza para el que elemento se comporte como un bloque y ocupara todo el ancho y alto disponible*/
+    padding-left: 20px; /*Se utiliza para poner espaci dentro del elemnto al costado left*/
+    padding-right: 20px; /* Se utiliza para poner espacio dentro del elemnto al costado derecho*/
+    color: white;/*Se utiliza para poner color a la letra del elemnto*/
+    text-decoration: none;/*Se utiliza para quitar la decoracion del texto o el sunrayado */
+}
+
+#nav > ul > li > a:first-child{ /* Se utiliza para aplicar unicamnete al pirmer elemnto dentro del grupo de muchos elemntos*/
+    border-left: 1px solid gray; /* Se utiliza para definir un borde dentro del elemnto al costado izquierdo*/
+}
+
+#nav > ul > li:hover{ /*Se utliza para que al pasar el cursor por encima esta genere un efecto */
+    background-color: #70b231; /*Se utiliza para definir el color que se desa para cuando se pare el pulsor*/
+    box-shadow: 0px 0px 4px green inset; /*Se utiliza para crear el efecto de sombra*/
+    transition: all 300ms; /*Se utiliza para que dure ese tiempo el paso del cursor en mostrar el efecto*/
+}
+
+/*MENU DESPLEGABLE*/
+#nav > ul > li > ul { /* Se utiliza para los estilos de # menu*/
+    display: none; /*La utilizamos para ocultar las un elemento en este caso las tablas creadas desde html*/
+    position: absolute;/*Se utiliza para poner la posission absuluta exacta */
+    width: 160px;/* Se utiliza para ajustar los los valors del ancho del elemento */
+    box-shadow: 0px 2px 2px gray; /* Se utiliza para crear el efecto de sombra  */
+    /* z-index: 1; Se utiliza para ordenas un elemntop que se super pone sobre si */
+
+}
+
+#nav > ul > li:hover > ul{ /* Se utiliza para indicar a que partes del menu se aplicaran los estilos acontinuacion */
+    display: block; /*Se utiliza para el que elemento se comporte como un bloque y ocupara todo el ancho y alto disponible*/
+}
+
+#nav > ul > li:hover > ul > li{ /*Se utiliza para indicar a que partes del menu se aplicaran los estilos cuando pase el cursor acontinuacion */
+    background-color: #f2f1f0; /* Se utiliza para definir el color del elemnto */
+    border-bottom: 1px solid #D6D6D6; /* Se utiliza para definir los bordes del elemento */ 
+    padding: 8px; /* Se utiliza para indicar los bordes al interior del elemnto*/
+    line-height: 25px; /* Se utiliza para indicar la altura de un elemento */
+    font-size: 13px; /*Se utiliza para ajustar el tamañp d ela letra */
+    transition:  all 300ms; /*Es tiempo quetardara en ponerce el efeto sobre ele elemnto cuando pase el cursor */
+}
+
+#nav > ul > li:hover > ul > li a{/* SDe utiliza para indicar que acontinuacion se podra estilos a los elelntos a*/
+    color: #666666; /*Se utiliza para indcar el color que se sobre pondra sobre el elemento al paso del cursor */
+
+}
+
+#nav > ul > li:hover > ul > li:hover{ /*Se utiliza para indicar que se pondran estilos a li cuado el cursor pase sobre el */
+    background-color: #ccc; /*Se utiliza para indicar el color que se le aplicara al elemento*/
+}
+
+/* CONTENIDO */
+
+#content { /*Se utiliza para definir el los estilos que se apicaran al id del contenido*/
+    font-family: sans-serif, Arial, Helvetica;
+    width: 1250px; /*Se utiliza para poner el ancho del elemento*/
+    min-height: 1100px; /*Se encarga de definir valor minimo alto del elemento*/
+    margin: 0px auto; /*Se utiliza para fijar las margenes del contenido*/
+}
+
+/* BARRA LATERAL */
+
+#aside, #frase{/* Se utiliza para indicar que se pondran estilos al elemnto id aside */
+   
+    width: 200px; /*Se utiliza para fijar el ancho del elemento*/
+    float: left; /*Se utiliza para indicar qe elemento flotara al lado izquierdo*/
+    margin: 30px; /*Se utiliza para indicar que tendra un margen de 30 en cada uno de sus 4 lados */
+    background-color: white;/*Se utiliza para indica el color del fondo del elemento */
+    border: 1px solid #ccc; /*Se utiliza para definir el borde del elemnto en uno de sus lados*/
+    box-shadow: 0px 2px 2px #ccc; /*Se utiliza para poner efecto de sonbreado al elemento*/
+    font-family: sans-serif, Arial, Helvetica, sans-serif; /*Nos permiete definir el estilo de letra que se usara*/
+}
+
+#frase{
+
+    width: 180px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+#aside .widget{ /*Se indica que se aplicara estilos al id aisde , pero dende la calse sea widget*/
+    display: block; /*Se utiliza para que ele lemnto se comporte como un bloque y ocupara todo el ancho y alto disponible*/
+    width: 180px;/*Se utiliza para definir el ancho que tendra el elemnto */
+    margin: 5px auto; /*Se utiliza para definir el margen en los 5 lados del elemnto */
+    padding: 8px; /*Se utiliza para definir el margen interno de 8 px en los 4 lados del elemento*/
+    padding-left: 10px; /*Se utliza para definir el espacio interno del elemento en sui lado izquierdo*/
+    padding-right: 10px;/*Se utiliza para definir el espacio interno del elemento sn su lado derecho*/
+    font-size: 14px;/*Se utiliza para definir el tamaño que yendra la letra dentro del elemento*/
+    border-bottom: 1px dashed #333333; /*Se utiliza para definir un borde en puntos */
+}
+
+#aside .widget:last-child{/*Se utiliza para seleccionar el ultimio elemento de la lista */
+    margin-bottom: 20px;/*Se utiliza para definir el margen en la parte inferior del elemento*/
+}
+
+
+#aside h3{ /*Se indica por medio de id al elemnto que se aplicaran los diferentes estilos*/
+    display: block; /*Se utiliza para que el elemento se comporte como un bloqle y se pueda utilizar todo el ancho y el alto del elemento */
+    width: 100%;/*Se utiliza para indicar que se utiizara el 100% del ancho del elemento*/
+    color: #333333; /*Se utiliza para indicar el color */
+    text-align: center; /*Se utiliza para  indicar que se desea centrar el elemento*/
+    padding-top: 2px; /*Se utiliza para indicar el espacio interno superior que se desea para el elemento*/
+    padding-bottom: 2px;/*Se utiliza para indicar el espacio infeior que se desea para el elemnto*/
+    margin-bottom: 15px;/*Se utiliza para indicar el marge inferiro que se desea para el elemento*/
+    background: #f2f3f2; /*SE utiliza para indicar el color que se desea en el fondo del elemento*/
+    border: 1px solid #ccc;/*Se utiliza para indicar el ancho y el color que se desea para los bordes del elemento */
+    border-left: none; /*Se itiiza para eleminar el borde izquierdo en un elemento*/
+    border-right: none;/*Se itiiza para eleminar el borde derecho en un elemento*/
+}
+
+#aside li{/*Se utiliza para indicar que se aplicara estilos a aside li*/
+    margin-top: 8px; /*Se utiliza para indicar la margen superior del elemento*/
+    margin-bottom: 5px; /*Se utiliza para indicar la margen inferior del elemento*/
+    margin-left: 20px; /*Se utiliza para indicar la margen de izquirda del elemnto*/
+    list-style: square; /*Se utiliza para poner un estilo de viñeta cuadrada a los elementos*/
+}
+
+/*FORMULARIOS BARRA LATERAL*/
+#aside div label, /*Lo utilizamos para indicar que se aplicara estilos a estos elementos del formulario*/
+#aside div input[type="text"], /*Se aplicara estos estilos al type  text*/
+#aside div input[type="email"],/*Se aplicara estos estilos al type email*/
+#aside div input[type=password],/*Se aplicara estos estilos al type password*/
+#aside div a{ /*Se aplicara estilos al div con a */
+    display:block;/*Se utiliza para que el elemento se comporte como un bloqle y se pueda utilizar todo el ancho y el alto del elemento */
+    width: 95%;/*Se utiliza para indicar que el ancho del elemnto sera del 95%*/
+    margin-top: 2px; /*Se utiliza para indicar que la margen superior es de 2px*/
+    margin-bottom: 2px; /*Se utiliza para indicar que la margen inferior es de 2px*/
+}
+
+#aside div input[type="button"],/*Se utiliza para indicar la ruta donde se aplicaran los cambios*/
+#aside div input[type="submit"],/*Se utiliza para indicar la ruta donde se aplicaran los cambios*/
+#aside div button{ /*Se utiliza para indicar la ruta donde se aplicaran los cambios*/
+    margin-top: 5px; /*Se aplica margen superir de 5px al elemento*/
+    margin-bottom: 10px; /*Se aplica margen inferiro de 10px al alemento */
+}
+
+#aside input, /*Se utiliza para indicar que a estos elemntos e aplicara los siguientes estilos*/
+#aside label{  /*Se utiliza para indicar que a estos elemntos e aplicara los siguientes estilos*/
+    margin: 0px auto; /*Se utiliza para indicar que el margen de los cuatro lados sera 0px auto*/
+    text-align: center; /*Se utiliza para indicar que el texto sera centrado a al ancho del elemento*/ 
+}
+
+/*SECCIONES*/
+#sections{
+    float: right;
+    width: 75%;
+    font-family:sans-serif,Arial, Helvetica;
+    margin-right: 20px;
+}
+
+#sections .titulo {
+   font-family: "fajala";
+   font-size: 24px;
+   font-weight: normal;
+   letter-spacing: 1px;
+   text-align: center;
+   margin-top: -20px;
+   padding-top: 20px;
+   padding-bottom: 10px;
+   border-bottom: 1px solid #ccc;
+} 
+
+#sections section{
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 4px #c9c9c9;
+    color: #333333;
+    font-size: 16px;
+    overflow: hidden;
+
+}
+#sections .article{
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+section .date{
+    color: gray;
+    font-size: 14px;
+
+}
+
+#sections .stickerOne,
+#sections .stickerTwo{
+    position:absolute;
+    margin-top: -38px;
+    z-index: 0;
+
+}
+
+#sections .stickerTwo{
+    margin-left: 860px;
+}
+
+#history{
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+
+}
+
+/*PIE DE PAGINA*/
+#footer{
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 40px;
+    background-color: #333333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;       
+
+}
+
