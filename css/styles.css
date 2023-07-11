@@ -56,28 +56,28 @@ a:hover{ /*Se utiliza para indicar que tomara un efecto al pasar el cursor por e
     
 }
 
-.red {
-    color: #9b2422 !important;
+.red { /*Se utiiza para definir los estilos que se aplicaran a esta clase*/
+    color: #9b2422 !important;/* indica que el color que se desea para esta clase y tiene el atributo !important el cual brinda prioridad a este comando*/
 }
 
-.blue{
-    color: #0c73f2 !important;
+.blue{/*Se utiiza para definir los estilos que se aplicaran a esta clase*/
+    color: #0c73f2 !important; /* indica que el color que se desea para esta clase y tiene el atributo !important el cual brinda prioridad a este comando*/
 }
 
-.orange{
-    color: #d69d2a !important;
+.orange{/*Se utiiza para definir los estilos que se aplicaran a esta clase*/
+    color: #d69d2a !important; /* indica que el color que se desea para esta clase y tiene el atributo !important el cual brinda prioridad a este comando*/
 }
 
-.icon{
-    font-family:"icons";
-    float: left;
-    margin-right: 5px;
-    margin-top: -2px;
+.icon{ /*Se utiliza para indicar los estilos que se aplicaran a la clase icon*/
+    font-family:"icons";/*Se utiliza para indicar el tipo de letra que se utilizara en esta seccion de la pagina*/
+    float: left; /*Esta aplicacion indica que se flotara a la parte izquerda de la pagina */
+    margin-right: 5px; /*Se utiliza para indicar que la margen de la parte derecha sera de 5px */
+    margin-top: -2px; /*se utiliza para indicar que la margen superior sera de -2px*/
 }
 
-.clearfix{
-    float: none;
-    clear: both;
+.clearfix{/*Es una tecnica para solucionar el problema de los flotantes por que en ocaciones se ve uno encima de otro */
+    float: none;/*Utilizamos esta propiedad para que el elemento no flote */
+    clear: both; /*Se utiliza para que los elemntos flotantes se acomoden correctamente */
 }
  
 /*FORMULARIOS*/
@@ -243,7 +243,7 @@ button:active{/*Se aplica el estado active el cual se aplicara haciendo click so
     border-bottom: 1px solid #D6D6D6; /* Se utiliza para definir los bordes del elemento */ 
     padding: 8px; /* Se utiliza para indicar los bordes al interior del elemnto*/
     line-height: 25px; /* Se utiliza para indicar la altura de un elemento */
-    font-size: 13px; /*Se utiliza para ajustar el tamañp d ela letra */
+    font-size: 13px; /*Se utiliza para ajustar el tamañp de la letra */
     transition:  all 300ms; /*Es tiempo quetardara en ponerce el efeto sobre ele elemnto cuando pase el cursor */
 }
 
@@ -278,12 +278,12 @@ button:active{/*Se aplica el estado active el cual se aplicara haciendo click so
     font-family: sans-serif, Arial, Helvetica, sans-serif; /*Nos permiete definir el estilo de letra que se usara*/
 }
 
-#frase{
+#frase{/*Se utiliza para indicar que se aplicara estilos al elemento del id frese*/
 
-    width: 180px;
-    padding: 10px;
-    font-size: 14px;
-    font-family: sans-serif;
+    width: 180px;/*Se indica que se utilizara el 100% del ancho del elemento*/
+    padding: 10px;/*Se utiliza para indicar que el espacio interior del elemento sera de 10px en sus cuatro lados */
+    font-size: 14px;/*Se utiliza para ajustar el tamaño d ela letra*/
+    font-family: sans-serif;/*Se utiliza para indicar el tipo d eletra que se aplica a elemnto*/
 }
 
 #aside .widget{ /*Se indica que se aplicara estilos al id aisde , pero dende la calse sea widget*/
@@ -349,78 +349,78 @@ button:active{/*Se aplica el estado active el cual se aplicara haciendo click so
 }
 
 /*SECCIONES*/
-#sections{
-    float: right;
-    width: 75%;
-    font-family:sans-serif,Arial, Helvetica;
-    margin-right: 20px;
+#sections{/*Se utiliza para indicar que se applicara a los id del elemnto sections estilos*/
+    float: right; /*indica que se flotara a la lado derecho de los elemntos*/
+    width: 75%; /*ocupara un ancho del total de un 75%*/
+    font-family:sans-serif,Arial, Helvetica; /*Se apliacra esta familia de letras*/
+    margin-right: 20px; /*Se tomara una margen de 20px al lado derecho*/
 }
 
-#sections .titulo {
-   font-family: "fajala";
-   font-size: 24px;
-   font-weight: normal;
-   letter-spacing: 1px;
-   text-align: center;
-   margin-top: -20px;
-   padding-top: 20px;
-   padding-bottom: 10px;
-   border-bottom: 1px solid #ccc;
+#sections .titulo { /*indica que se aplicaran estilos al id del elemnto sections pero en los titulos*/
+   font-family: "fajala";/* Se apliacara este estilo de letra al elemento titulo*/
+   font-size: 24px;/* Se utuliza para ajustar el tamaño de la letra*/
+   font-weight: normal; /*Se utiliza para definir el peso de la fuente de la letra o la negrita que se aplica*/
+   letter-spacing: 1px; /*Se utiliza para indicar el espacio que se tendra entre letras*/
+   text-align: center; /*Se utiliza para indicar el texto sera centrado en el elemnto */
+   margin-top: -20px;/*Se utliza para indicar que el elemento tendra un -20px en la margen superior*/
+   padding-top: 20px;/*Se utiliza para indicar que el lemnto tendra un espacio internos superior de 20px*/
+   padding-bottom: 10px;/*Se utiliza para indicar que el elemnto tendra un espacio interno inferior de 10px*/
+   border-bottom: 1px solid #ccc; /*Indica que la margen inferior sera 1px solida y tendra un color*/
 } 
 
-#sections section{
-    margin-top: 40px;
-    background-color: white;
-    padding: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0px 0px 4px #c9c9c9;
-    color: #333333;
-    font-size: 16px;
-    overflow: hidden;
+#sections section{/*Se utiliza para indicar que se aplicaran estilos al elemntos de las sections section*/
+    margin-top: 40px;/*Indica que el elemnto tendra una margen superior de 40px*/
+    background-color: white; /*insica que el fondo del elemnto se le aplicara un color de relleno*/
+    padding: 20px;/*Indica que se aplicara espacio al interior del elemnto en sus cuatro costados */
+    border: 1px solid #ccc;/*Se utiliza para indicar que se aplicara un borde a los 4 lados del elemnto solido y tendra un color*/
+    box-shadow: 0px 0px 4px #c9c9c9; /*Se utiliza para crear el efecto de sombreado al elemento*/
+    color: #333333;/*Se utiliza para indicar que aplicara este color al elemento*/
+    font-size: 16px; /*Se aplicara un tamaño de 16px a la letra del elemento*/
+    overflow: hidden; /*Se utiliza para que elemento se recorte por si es mas grande que el div y de esta forma no se ve que revosa el div*/
 
 }
-#sections .article{
-    margin: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+#sections .article{/*Se utiliza pára indicar que se aplicara estilos a la sections de article*/
+    margin: 10px; /*Se utilizara una margen de 10px en los cuatro lados del elemento*/
+    margin-top: 20px; /*Se utiliza para inicar que la margen superior sera de 20px*/
+    margin-bottom: 20px; /*Se utiliza para indicar que la margen inferior tendra un margen de 20px*/
 }
-section .date{
-    color: gray;
-    font-size: 14px;
+section .date{ /*Se  utiliza para ponmer estilos al bloqye de section date*/
+    color: gray; /*nos incida el color que tendra */ 
+    font-size: 14px; /*No indica que el coor de la letra sera de 14px*/
 
 }
 
 #sections .stickerOne,
-#sections .stickerTwo{
-    position:absolute;
-    margin-top: -38px;
-    z-index: 0;
+#sections .stickerTwo{ /*Se utiliza para indicar que se aplicara estilos a los id stickerOne,TWO*/
+    position:absolute;/*permiete mover dentro del elemnto div con los valores de rich , left y demas */
+    margin-top: -38px; /*Lo utilizamos para indicar que el borde superior tendra una margen de -38px*/
+    z-index: 0; /*Se utiliza para sobre poner elemnos hijos en el elento superior o asignados al div*/
 
 }
 
-#sections .stickerTwo{
-    margin-left: 860px;
+#sections .stickerTwo{/*Se utiliza para indicar que se trabajara con el id sections clase stikerTwo*/
+    margin-left: 860px;/*Se utiliza para indiar el margne que tendra al lado izquierdo*/
 }
 
-#history{
-    float: right;
-    margin-top: 20px;
-    margin-right: 20px;
+#history{/*Se utiliza para indicar que se trabajara en los estilos del id history*/
+    float: right; /*Se utiliza para indicar que se flotara el elemnto al lado derecho*/
+    margin-top: 20px;/*Se alicara un margen superiore de 20px*/
+    margin-right: 20px; /*Se aplicara un margen a la derecha de 20px., sobre el elemento*/
 
 }
 
 /*PIE DE PAGINA*/
-#footer{
-    width: 100%;
-    margin: 0px auto;
-    text-align: center;
-    margin-top: 40px;
-    background-color: #333333;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: white;
-    font-family: sans-serif;
-    font-size: 14px;       
+#footer{/*Se utiliza para insicar que se trabajara en el id del pie de pagina */
+    width: 100%;/*Se aplica el 100% de ancho del elemento*/
+    margin: 0px auto;/*Se aplicara el marguen de 0px a los cuatro lados del elemento*/
+    text-align: center;/*Se utiliza para indicar el alto del texto*/
+    margin-top: 40px;/*Se utilizza para indicar el que la margen superior sera de 40px*/
+    background-color: #333333;/*Se utiliza para definir el color del elmento*/
+    padding-top: 10px;/*Se utiliza para indicar que el espaci interno superir sera de 10px*/
+    padding-bottom: 10px;/*Se utiliza para indicar que el espacio inferior sera de 10px*/
+    color: white;/*Se aplicara este color en el elemento*/
+    font-family: sans-serif;/*Se indica el tipo de letra que se aplicara en el elemento*/
+    font-size: 14px;/*Se utiliza para indicar el tamaño que se aplicara a la letra del elemento*/
 
 }
 
